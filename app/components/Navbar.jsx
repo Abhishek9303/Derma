@@ -7,21 +7,26 @@ const Navbar = () => {
   const [modal, setModal] = useState(false);
   const openModal = () => {
     setModal(true);
-    if(modal){
-      return <BookApp/>
+    if (modal) {
+      return <BookApp />;
     }
   };
 
   return (
     <>
       <div className="nav">
-        Derma
+        <Link href="/"> Derma</Link>
         <div className="navP1">
           <Link href="/home">Home</Link>
-          <Link href="/">Contact Us</Link>
-          <button className="btn-nav" onClick={()=>{
-            openModal()
-          }}>Book An Appointment</button>
+          <Link href="/contactUs">Contact Us</Link>
+          <button
+            className="btn-nav"
+            onClick={() => {
+              openModal();
+            }}
+          >
+            Book An Appointment
+          </button>
         </div>
       </div>
     </>

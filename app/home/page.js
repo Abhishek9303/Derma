@@ -1,7 +1,10 @@
 import React from "react";
+import BuyProduct from "../components/razorpay/BuyProduct";
 
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return <>
+  <BuyProduct/>
+  </>;
 };
 
 export default Homepage;
